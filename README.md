@@ -130,8 +130,23 @@ uvicorn api.app:app --reload
 streamlit run dashboard/streamlit_app.py
 
 ---
+## Dataset
+
+Download the dataset from Kaggle:
+
+Store Item Demand Forecasting Challenge
+
+Place `train.csv` inside:
+
+data/raw/train.csv
+
+Then run:
+
+python -m src.pipelines.ingestion
+python -m src.pipelines.feature_engineering
 
 ## Author
 Juni
 
 End-to-end data science system built as a production-style analytics platform project.
+
